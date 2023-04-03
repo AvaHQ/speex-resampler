@@ -7,6 +7,8 @@ emcc \
   -O3 -o src/speex_wasm.js \
   -s EXPORT_ES6=1 \
   -s MODULARIZE=1 \
+  -s NODEJS_CATCH_REJECTION=0 \
+  -s NODEJS_CATCH_EXIT=0 \
   -s SINGLE_FILE=1 \
   -s EXPORT_NAME="Speex" \
   -s NO_DYNAMIC_EXECUTION=1 \
