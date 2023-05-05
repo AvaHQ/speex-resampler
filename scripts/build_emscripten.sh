@@ -4,7 +4,7 @@ set -eo pipefail
 emcc \
   -s INITIAL_MEMORY=20MB \
   -s ALLOW_MEMORY_GROWTH=1 \
-  -O3 -o src/speex_wasm.js \
+  -o src/speex_wasm.js \
   -s EXPORT_ES6=1 \
   -s MODULARIZE=1 \
   -s NODEJS_CATCH_REJECTION=0 \
